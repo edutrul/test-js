@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>Jquery Images Slider Edutrul Example</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="eduslider.js"></script>
+</head>
+<body>
+<style type="text/css">
+#wrapper {
+  width: 200px;
+  height: 280px;   
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -50px;
+  margin-top: -250px;
+}
+</style>
+<div id="wrapper">
+  <h2> My First Image Slider! By <a href="http://pe.linkedin.com/pub/luis-eduardo-telaya-escobedo/45/65/ba9">Eduardo Telaya</a></h2>
+  <div id="eduslider" style="background-repeat: no-repeat; height:200px"></div>
+  <span>Special thanks to <a href="http://www.linkedin.com/pub/juan-borda/24/584/852">Juan Borda</a></span>
+</div>
+<script type="text/javascript">
+  
+options = {
+  imgs: [
+    'http://img1.ak.crunchyroll.com/i/spire3/0b313a753b160c7fb288fd6a2c8943d11352120199_large.jpg',
+    'http://cdn.picbadges.com/pictures/fae460d0b96fe4c0def5e2d0d4a4d625.jpg.200.jpg',
+    'http://th05.deviantart.net/fs71/200H/i/2012/293/5/c/asuna_yuuki_sword_art_online_by_moojakok-d5icso3.jpg',
+  ],
+  effect: 'fade'
+}
+$('#eduslider').eduslider(options);
+
+</script>
+</body>
+</html>
+
